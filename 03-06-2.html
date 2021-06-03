@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox</title>
+<style>
+.container {
+display: flex;
+height: 800px;
+width: 800px;
+border: 1px solid black;
+background: yellow;
+align-items: flex-start;
+gap: 20px;
+row-gap: 20px;
+column-gap: 20px;
+flex-wrap: wrap;
+align-content: center;
+}
+.inner {
+width: 100px;
+height: 100px;
+background: pink;
+border: 1px solid black;
+flex: 1 1 auto;
+}
+</style>
+</head>
+<body>
+<div class="container" 
+align-items: flex-start;
+gap: 20px;
+row-gap: 20px;
+column-gap: 20px;
+flex-wrap: wrap;
+align-content: center;>
+<div class="inner">1</div>
+<div class="inner">2</div>
+<div class="inner">3</div>
+<div class="inner">4</div>
+<div class="inner">5</div>
+<div class="inner">6</div>
+</div>
+</body>
+</html>
+
+justify-content: center;
