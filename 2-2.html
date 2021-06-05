@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animations</title>
+<style>
+.container {
+border: 1px solid red;
+position: relative;
+text-align: center;
+margin: 50px;
+padding: 50px;
+min-height: 250px;
+}
+.zoo {
+width: 180px;
+height: 220px;
+position: absolute;
+animation: mouse 10s linear infinite alternate;
+}
+.sign {
+animation: sign 2s linear infinite;
+}
+@keyframes mouse {
+0% {
+left: 0;
+}
+50% {
+left: 50%;
+}
+100% {
+left: 100%;
+}
+}
+@keyframes sign {
+0% {
+transform: rotate(0deg);
+}
+25% {
+transform: rotate(90deg);
+}
+50% {
+transform: rotate(180deg);
+}
+75% {
+transform: rotate(270deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img class="zoo" src="mylogo.png" alt="pic 1">
+<img class="sign" src="whirlpool.png" alt="pic 2">
+</div>
+</body>
+</html>
