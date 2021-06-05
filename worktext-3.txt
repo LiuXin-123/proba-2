@@ -2,11 +2,11 @@
 1. Создаём каталог на компе "Name"
 2. Даём команду git init
 3. В каталоге "Name" заводим рабочий файл "File" на ветке Master
-4. Зайти на Github - там должен появиться каталог "Name"
+4. Зайти на Github - там создаём каталог "Name"
 5. Копируем его адрес в HTTPS-формате
 6. На компе, находясь в новом репозитории, даем команду git remote add origin "адрес с github"
 6а. Чтобы привязать к другому каталогу команда: git remote rm origin "адрес"
-7. git push --set-upstream origin master. После этого на github появится ветка master
+7. git push --set-upstream origin master. После этого на github появится ветка master с файлом "File"
 
 
 Порядок работы над задачей
