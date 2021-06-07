@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transform</title>
+<style>
+.container {
+margin: 100px;
+padding: 40px;
+border: 1px solid red;
+text-align: center;
+/*transform: rotate(45deg);*/
+}
+.container img {
+width: 180px;
+height: 220px;
+/*transform: rotate(-90deg) scale(3,1);*/
+/*transform: skew(45deg, 0);*/
+transform: translate(-1000px,-100px);
+transition: transform 10000ms ease 3s;
+}
+.container img:hover {
+transform: translate(1000px,100px);
+transition: transform 5000ms linear;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img src="mylogo.png">
+</div>
+</body>
+</html>
