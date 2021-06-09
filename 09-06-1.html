@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IfThenElse</title>
+<script>
+const WORD = 'пингвин';
+let num;
+
+do {
+num = prompt('Введите число');
+} while (isNaN(parseInt(num)));
+
+let str = num + ' ' + WORD;
+let ctrl = num % 100;
+if ((ctrl % 10 == 1) && (ctrl != 11)) {
+alert(str);
+} else if ((ctrl % 10 == 2) && (ctrl != 12)) {
+str += 'а';
+alert(str);
+} else if ((ctrl % 10 == 3) && (ctrl != 13)) {
+str += 'а';
+alert(str)
+} else if ((ctrl % 10 == 4) && (ctrl != 14)) {
+str += 'а';
+alert(str);
+} else {
+str += 'ов';
+alert(str);
+}
+</script>
+</head>
+<body></body>
+</html>
+

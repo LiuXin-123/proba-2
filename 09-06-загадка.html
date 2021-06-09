@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IfThenElse</title>
+<script>
+let name = prompt('Как тебя зовут?');
+alert(`Привет, ${name}! Отгадай 3 загадки`);
+
+const zag1 = "Зимой и летом...";
+const zag2 = "Сто одёжек...";
+const zag3 = "Висит груша...";
+const otgadka1 = "Ель";
+const otgadka2 = "Капуста";
+const otgadka3 = "Лампочка";
+
+function zagadka(zag, otg){
+let a = prompt(zag);
+if (a === otg) {
+alert('Ответ правильный');
+} else {
+alert('Ответ неправильный. Правильно - ' + otg);
+}
+}
+zagadka (zag1, otgadka1)
+zagadka (zag2, otgadka2)
+zagadka (zag2, otgadka3)
+
+alert(`Пока, ${name}. Удачи!`);
+
+</script>
+</head>
+<body></body>
+</html>

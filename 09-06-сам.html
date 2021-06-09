@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IfThenElse</title>
+<script>
+const WORD1 = 'пингвин';
+const WORD2 = 'коз';
+const WORD3 = 'озер';
+const WORD4 = 'лес';
+const POSTFIX1 = ['ов', 'а', ''];
+const POSTFIX2 = ['', 'ы', 'а'];
+const POSTFIX3 = ['', 'а', 'о'];
+const POSTFIX4 = ['ов', 'а', ''];
+let num;
+
+function tchislitelnoe(i, word, post) {
+let ctrl = i % 100;
+let point = 0;
+if ((ctrl % 10 == 1) && (ctrl != 11)) {
+point = 2;
+} else if ((ctrl % 10 == 2) && (ctrl != 12)) {
+point = 1;
+} else if ((ctrl % 10 == 3) && (ctrl != 13)) {
+point = 1;
+} else if ((ctrl % 10 == 4) && (ctrl != 14)) {
+point = 1;
+}
+return (i + ' ' + word + post[point]);
+}
+
+do {
+num = prompt('Введите число');
+} while (isNaN(parseInt(num)));
+
+alert(tchislitelnoe(num, WORD1, POSTFIX1));
+
+do {
+num = prompt('Введите число');
+} while (isNaN(parseInt(num)));
+
+alert(tchislitelnoe(num, WORD2, POSTFIX2));
+
+do {
+num = prompt('Введите число');
+} while (isNaN(parseInt(num)));
+
+alert(tchislitelnoe(num, WORD3, POSTFIX3));
+do {
+num = prompt('Введите число');
+} while (isNaN(parseInt(num)));
+
+alert(tchislitelnoe(num, WORD4, POSTFIX4));
+</script>
+</head>
+<body></body>
+</html>
