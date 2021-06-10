@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exersices</title>
+<script>
+let spisok = [];
+spisok.push('salt');
+spisok.push('beer');
+spisok.push('carrot');
+spisok.push('chicken');
+spisok.push('coffee');
+
+console.log('создали список');
+console.log(spisok);
+
+let str = spisok.join(', ');
+
+let cennik = {};
+for (let unit of spisok) {
+cennik[unit] = 0;
+console.log(cennik);
+}
+cennik.salt = 10;
+cennik.beer = 100;
+cennik.carrot = 50;
+cennik.chicken = 250;
+cennik.coffee = 500;
+
+console.log('создали ценник');
+console.log(cennik);
+
+let sum = 0;
+
+for (let num in cennik) {
+console.log(num);
+console.log(cennik[num]);
+console.log(sum);
+console.log('=====');
+sum += cennik[num];
+}
+console.log(sum);
+console.log(str);
+
+//alert('Need buy: ' + str + '.');
+//alert('Need money: ' + sum + '.');
+</script>
+</head>
+<body></body>
+</html>
