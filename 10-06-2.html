@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Objects</title>
+<script>
+let alef = {
+name: 'John',
+age: 25,
+address: 'Fort Nox',
+func: function(){
+a = prompt('Введите число');
+alert(a * this.age);
+}
+}
+/*
+console.log(alef.name);
+console.log(alef['age']);
+
+alef.address = 'Moscow, Kremlin';
+
+alert(alef.address);
+*/
+
+for (let q in alef) {
+alert(q);
+alert(alef[q]);
+}
+
+
+
+
+</script>
+</head>
+<body></body>
+</html>
