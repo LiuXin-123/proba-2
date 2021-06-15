@@ -19,16 +19,14 @@
 
 function getRandomInt1_100() 
 {
-  return Math.floorMath.random() * 100 + min;
+  return Math.floor(Math.random() * 100) + 1;
 }
-let num = getRandomInt(1, 100);
+let num = getRandomInt1_100();
 function game(){
-	while (
-		do {
-		let ans = +prompt("Введи число",);//...
-		} while (isNaN(parseInt(ans)));
-	) {
-	alert("Это не то. Задай число"
+	let ans = +prompt("Введи число",);//...
+	function checkAns(){
+		 while (isNaN(parseInt(ans)));
+		alert("Это не то. Задай число");
 	}
 	
 	let counter = 0;
@@ -38,11 +36,11 @@ function game(){
 			} else if (ans > num) {
 				alert('Перебор');
 			} else {
-			alert('Ответ правильный!');
+				alert('Ответ правильный!');
 			}
 			counter++; 
-		} while (ans == num);
-		
+		} while (!ans == num);
+		alert(counter);
 }
 
 /* начинаем действовать */
@@ -51,7 +49,7 @@ let soglasie = confirm("Согласен?");
 if (soglasie) {
 do {
 game();
-alert(counter);
+
 soglasie = confirm("Сыграем еще раз?");
 } while (soglasie);
 }
