@@ -1,0 +1,46 @@
+Д\з: написать классы для всех остальных фигур на своей доске, и расставляем в начальное положение, доделать по образцу, 
+Читать первую главу 2-й части.
+
+Шахматы Шелуханова https://github.com/ShellKhan/learning/blob/dom/chessboard2.html
+
+WINDOW - глобальный объект
+
+Свойства window )часть):
+	location
+	history
+	document
+методы window (часть) :
+	alert
+	prompt
+	confirm
+	setTimeout
+	isFinite
+	parseInt
+	setInterval
+	eval - использовать НЕЖЕЛАТЕЛЬНО!!! превращает строку в код для исполнения, чем может воспользоваться хакер
+	
+document - наш html-документ вместе с окружением. также эквивалетнен обращению к элементу <html>. Команда в консоли document
+
+свойства документа (часть):
+	body
+	images
+	forms
+	links
+	all - все тэги документа
+методы документа (часть):
+	write - запись прямо в поток. лучше не пользоваться, т.к. может стереть всё раз и навсегда...!!!
+	
+	свойства элемента (документ === тоже элемент!):
+	querySelector можно сделать сложный селектор (наш главный инструмент)
+	querySelectorAll
+	getElementById
+	getElementByTagName - выдаёт список элементов с определённым Тэгом, но нельзя больше ничего получить (на класс ни...)
+	
+	Chess-board: 165min
+	Порядок команд
+	var a = document.querySelector('.white_king')
+	
+	let a = document.getElementById('e1');
+	let b = document.getElementById('d1');
+	a.classList.toggle('white_king'), b.classList.toggle('white_king');
+	230 мин - как записать классы
