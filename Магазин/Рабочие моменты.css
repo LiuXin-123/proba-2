@@ -1,0 +1,19 @@
+.bottomheader .container {
+	/*display: flex; вариант 1 */
+	/*text-align: right; вариант 2 */
+}
+.anytext {
+	/*flex: 1 1 auto; вариант 1 */
+	font-weight: 700;
+	/*float: left; вариант 2 */
+}
+.fakebutton {
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 0 0 20px;
+	/*flex: none; вариант 1 */
+}
