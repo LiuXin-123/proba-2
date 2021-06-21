@@ -23,14 +23,14 @@ function getRandomInt1_100()
 }
 let num = getRandomInt1_100();
 function game(){
-	let ans = +prompt("Введи число",);//...
+	let ans;
 	function checkAns(){
-		 while (isNaN(parseInt(ans)));
+		 while (isNaN(parseInt(ans, 10)));
 		alert("Это не то. Задай число");
 	}
 	
 	let counter = 0;
-		do {
+		do {ans = +prompt("Введи число",);
 			if (ans < num) {
 				alert('Маловато будет!');
 			} else if (ans > num) {
